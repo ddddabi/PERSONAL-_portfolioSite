@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="sample_js.css">
+		<!-- jquery 연결 : CDN		-->
+		<script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+		<script src="sample_js.js"></script>
+    <title>portfolio</title>
+</head>
+    
+    <body>
+        <!-- Sidebar/menu -->
+        <header id='menu'>
+            <h2 id="name">DAVIN JUNG</h2>
+            <nav>
+                    <!-- onclick : 클릭 시 동작 -->
+                <a href="#" onclick="moveScroll('home')">HOME</a>
+                <a href="#" onclick="moveScroll('about')">ABOUT</a>
+                <a href="#" onclick="moveScroll('my-skills')">SKILLS</a>
+                <a href="#" onclick="moveScroll('contact')">CONTACT</a>
+            </nav>
+        </header>
+
+        <!-- Webpage contents -->
+        <div class="web-content">
+
+        <!-- HOME -->
+        <section class="home"> 
+            <div id="introduce">
+            <p class="introduce text"></p>
+            <p class="introduce tag">#C언어 #자바 #파이썬 #프론트엔드 #빅데이터 #리눅스</p>
+            </div>  
+        </section>
+
+        <!-- ABOUT -->
+        <section class="about">
+            <img src="student.png" style="border-radius: 50%; width: 20%; min-width: 100px;">
+            <p><strong id="img-name">DAVIN JUNG</strong></p>
+            <hr>
+            <div class="about-me">
+            <!-- left side -->
+            <div id="about-mind">
+                <h2 style="color: crimson;">"끈기와 도전정신"</h2>
+                <p id="mind-detail">
+                <span>"즐기는 자가 성공한다"</span>는 말을 믿습니다. 꾸준히 새로움을 추구함과 동시에 독창적인 방식을 만들어나가는 것을 좋아합니다.
+                성공에 취하지 않고, 실패에 좌절하지 않으며 묵묵히 앞으로 나아가겠습니다. <span> 에이스가 될 준비가 되어 있습니다.</span>
+                </p>
+            </div>
+            <!-- right side -->
+            <div id="about-history">
+                <div>
+                <h2>PLAN</h2>
+                <ul id='history'>
+                    <li>- 보안 프로그램 제작</li>
+                    <li>- 어플 제작</li>
+                    <li>- 프로그래밍 언어 마스터</li>
+                </ul>
+                </div>
+            </div>
+            </div>
+            <hr>
+        </section>
+
+        <!-- SKILLS -->
+        <section class="my-skills">
+            <h2 style="text-align: center;"><strong>SKILLS</strong></h2>
+            <div id="all-skills">
+                <div class="each-skill">
+                <p>끈기</p>
+                <div class="guage-bar">
+                    <div class="guage" style="width:90%;"><p>90%</p></div>
+                </div>
+                <p class="descript">무언가를 시작하면 완벽하게 해냅니다.<br>
+                    책임감있게 끝까지 마무리합니다.</p>
+                </div>
+                <div class="each-skill">
+                <p>도전 정신</p>
+                <div class="guage-bar">
+                    <div class="guage" style="width:80%;"><p>80%</p></div>
+                </div>
+                <p class="descript">항상 도전하는 것을 좋아합니다.<br>
+                    실패를 두려워하지 않고 계속해서 도전합니다.</p>
+                </div>
+                <div class="each-skill">
+                <p>관심도</p>
+                <div class="guage-bar">
+                    <div class="guage" style="width:100%;"><p>100%</p></div>
+                </div>
+                <p class="descript">컴퓨터 분야에 관심이 굉장히 많고,<br>
+                    앞으로 이루고 싶은 꿈이 많습니다.</p>
+                </div>
+            </div>
+        </section>
+
+            
+        <!-- TOP -->
+            <section class="top">
+                <a href="#">TOP</a>
+                <script type="text/javascript">
+                    var sch = $(window).height();
+                    $('top.a').on('click',function(){
+                        $('html, body').animate({
+                            scrollTop:0
+                        },1000)
+                        return false;
+                    });
+                </script>
+            </section>
+            
+        <!-- CONTACT -->
+        <footer>
+            <p class="contact">010.1234.5678</p>
+            <p class="contact">davin@jung.com</p>
+            <p id="copyright">copyright 2020. davin jung. All rights reserved.</p>
+        </footer>
+
+        </div>
+		
+  </body>
+</html>

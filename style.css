@@ -1,0 +1,53 @@
+/* common style (font) */
+@font-face { font-family: 'GoyangIlsan'; 
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/GoyangIlsan.woff') format('woff'); 
+    font-weight: normal; font-style: normal; 
+}
+
+body    { font-family: 'GoyangIlsan'; margin: 0px; }
+p       { line-height: 1.5em; }
+
+/* header style */
+#menu   { display: flex; justify-content: space-between; padding: 20px; background-color: darkslategrey;}
+#name   { color : white; margin: auto 10px;}
+nav     { margin: auto 10px;}
+a       { margin : auto 5px; color : white; text-decoration: none;}
+
+/* home style */
+.home   { background: darkslategrey url('frontend.jpeg'); background-size: 100% 100%;  background-blend-mode: multiply; opacity: 0.8;  height: 400px; text-align: center; display: table; width : 100%;}
+#introduce  { vertical-align: middle; display: table-cell; }
+.introduce  { color: white; font-size: 24px; }
+.tag        { font-size: 20px; }
+
+/* about style */
+.about      { text-align: center; margin: 30px;}
+#img-name   { font-size: 30px;}
+.about-me   { display: flex; justify-content: center;}
+hr          { width: 80%; margin-top: 30px; margin-bottom: 30px;}
+#history    { list-style: none;}
+#history li { font-size: 18px; line-height: 1.5em; text-align: left;}
+#about-mind { width: 35%;}
+#about-history  { width: 35%;}
+#mind-detail    { font-size: 18px; }
+#mind-detail span   { font-weight: bold; color: crimson;}
+
+/* skill style */
+.each-skill { width: 60%; margin: auto; margin-bottom: 15px;}
+.descript   { font-size: 14px !important; line-height: 1.3em !important; margin: 5px !important; margin-top: 15px !important; 
+    margin-bottom: 30px !important; color: #5c5c5c;}
+.guage-bar  { border : 0.5px solid #aeaeae; background-color: white; height: 24px;}
+.guage      { background-color: darkslategrey; height: 100%; text-align: center;}
+.guage p    { margin: auto; color: white;}
+
+/* top style */
+.top				{ padding:0; margin:0; }
+.top a				{ position:fixed; bottom:30px; right:30px; width:50px; height:50px; background:#333; color:#fff; text-decoration:none; text-align:center; line-height:30px; display:block; }
+
+/* footer style */
+footer      { background-color:darkslategrey; padding: 20px; text-align: center;}
+.contact    { font-size: 25px; color: white;
+}
+#copyright  { color: white;}
+
+
+
