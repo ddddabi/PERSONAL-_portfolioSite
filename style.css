@@ -14,7 +14,7 @@ nav     { margin: auto 10px;}
 a       { margin : auto 5px; color : white; text-decoration: none;}
 
 /* home style */
-.home   { background: darkslategrey url('frontend.jpeg'); background-size: 100% 100%;  background-blend-mode: multiply; opacity: 0.8;  height: 400px; text-align: center; display: table; width : 100%;}
+.home   { background: darkslategrey url('image/frontend.jpeg'); background-size: 100% 100%;  background-blend-mode: multiply; opacity: 0.8;  height: 400px; text-align: center; display: table; width : 100%;}
 #introduce  { vertical-align: middle; display: table-cell; }
 .introduce  { color: white; font-size: 24px; }
 .tag        { font-size: 20px; }

@@ -23,8 +23,7 @@ $(document).ready(function(){
 	var idx = 0
 	//문자열을 분리한다.
 	comment = comment.split('')
-	console.log(comment)
-	
+
 	// 배열에 들어있는 문자를 한 글자씩 보여지게 한다.
 	// 시간 간격을 두고, 동작한다.
 	var tickin = setInterval(typing, 300)
@@ -43,6 +42,7 @@ $(document).ready(function(){
 	}
 	
 	$(window).scroll(function(){
+        // 검사키고 스크롤 내리면 나오는데 검사 안키고 내리면 안나옴..
 		if(!isAboutShow){
 			if($(window).scrollTop() > $('.about-me').offset().top){
 				isAboutShow = true //이렇게 하고나면 다시는 동작하지 않는다!
